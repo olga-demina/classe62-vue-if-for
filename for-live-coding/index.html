@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+
+    <div id="root">
+
+        <ul>
+            <li v-for="(item, index) in names"> {{ index }} {{ item.toUpperCase() }} </li>
+        </ul>
+
+        <h2> v-for in Object</h2>
+
+        <p v-for="(value, key) in student">{{ key }} -  {{ value }}</p>
+
+        <h2> v-for con numero</h2>
+
+        <ul>
+            <li v-for="number in 10"> {{ number }} </li>
+        </ul>
+
+        <h2>Array di oggetti</h2>
+
+        <ul v-if="studentList.length > 0">
+            <li v-for="item in studentList"> {{ item.name }} {{ item.lastname }}</li>
+        </ul>
+        <div v-else> Non c'è nessun elemento </div> 
+
+        <h2> Un oggetto in una posizione specifica dell'array</h2>
+
+        <!-- <h4>{{ studentList[studentIndex].name }} {{ studentList[studentIndex].lastname }}</h4>
+        <p>Classe {{ studentList[studentIndex].class }}</p> -->
+
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

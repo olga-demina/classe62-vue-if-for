@@ -1,0 +1,11 @@
+.img-small {
+    width: 60%;
+}
+
+.img-grey {
+    filter: grayscale(1);
+}
+
+.img-border-radius {
+    border-radius: 2rem;
+}
